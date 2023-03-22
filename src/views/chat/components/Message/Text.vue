@@ -55,7 +55,7 @@ const text = computed(() => {
 })
 
 function highlightBlock(str: string, lang?: string) {
-  return `<pre class="code-block-wrapper"><div class="code-block-header"><span class="code-block-header__lang">${lang}</span><span class="code-block-header__copy">${t('chat.copyCode')}</span></div><code class="hljs code-block-body ${lang}">${str}</code></pre>`
+  return `<pre class="code-block-wrapper"><div class="code-block-header"><span class="code-block-header__lang">${lang}</span><span class="code-block-header__copy">${t('chat.copyCode')}</span></div><code class="hljs code-block-body ${lang}">${str}</code></pre><div class="code-block-newline"></div>`
 }
 
 defineExpose({ textRef })
